@@ -4,7 +4,6 @@ applications:
   host: timesheets-pal-boyu
   memory: 1G
   instances: 1
-  env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-boyu.apps.cumuluslabs.io
   services:
   - tracker-timesheets-database
+  - tracker-service-registry

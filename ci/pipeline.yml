@@ -14,7 +14,7 @@ resources:
     key: pal-tracker/current-version
     access_key_id: {{aws-access-key-id}}
     secret_access_key: {{aws-secret-access-key}}
-        region_name: {{aws-region-name}}
+    region_name: {{aws-region-name}}
 
 
 - name: allocations-artifacts

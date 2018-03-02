@@ -40,5 +40,5 @@ bootRun.environment([
 ])
 
 test.environment([
-        "REGISTRATION_SERVER_ENDPOINT": "http://registration-server",
+    "REGISTRATION_SERVER_ENDPOINT": "http://registration-server",
 ])

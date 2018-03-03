@@ -23,10 +23,14 @@ dependencies {
     compile "io.pivotal.spring.cloud:spring-cloud-sso-connector:$springCloudSsoVersion"
 
     testCompile project(":components:test-support")
+
+    compile "org.springframework.cloud:spring-cloud-starter-sleuth"
+    compile "org.springframework.cloud:spring-cloud-sleuth-stream"
+    compile "org.springframework.cloud:spring-cloud-starter-stream-rabbit"
 }
 
 bootRun.environment([
-        "APPLICATION_OAUTH_ENABLED": true,
+        "APPLICATION_OAUTH_ENABLED": false,
         "SECURITY_OAUTH2_CLIENT_CLIENT_ID": "tracker-client",
         "SECURITY_OAUTH2_CLIENT_CLIENT_SECRET": "supersecret",
         "SECURITY_USER_NAME": "actuator",
